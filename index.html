@@ -65,7 +65,7 @@ gtag('config', 'UA-164484990-1');
                 <a href="./index.html" class="logo">
                     <img src="./assets/images/logo_big.png" height="40px" alt="" class="hidden-xs">
                     <img src="./assets/images/logo_big.png" height="40px" alt="" class="visible-xs">
-                </a>
+                </a>      
             </div>
             <div class="navbar-mobile-clear"></div>
         </div>
@@ -76,37 +76,13 @@ gtag('config', 'UA-164484990-1');
                 <div class="col-md-12">
                     <div class="panel panel-default" style="margin-top: 200px; margin-left: 50%; transform:translate(-50%,-50%); width: 80%;">
                         <div class="panel-body">
-
-
 <!--打字机效果-一言网一句引入-->
-         <script src="./assets/js/typed.js"></script>
-         <span id="hitokoto" style="font-size: 25px; font-family:Microsoft YaHei;"></span>
-
-<script>
-  var subtitleEffect = true
-  fetch('https://v1.hitokoto.cn')
-  .then(function (res){
-    return res.json();
-  })
-  .then(function (data) {
-
-      var from = '出自 ' + data.from
-      var sub = ''.length == 0  ? new Array() : ''.split(",");
-      var both = sub.unshift(data.hitokoto,from)  
-      var typed = new Typed("#hitokoto", {
-        strings: sub,
-        startDelay: 300,
-        typeSpeed: 150,
-        loop: true,
-        backSpeed: 50
-      });
-  })
-  .catch(function (err) {
-    console.error(err);
-  })
-</script>
+                        <script src="./assets/js/typed.js"></script>
+                        <span id="hitokoto" style="font-size: 25px; font-family:Microsoft YaHei;"></span>
+                        <script src="./assets/js/hitikoto.js"></script>
 <!--END:打字机效果-一言网一句引入-->
                             <div class="row">
+                                <script src="./assets/js/sakura.js"></script>
                                 <div class="col-sm-6">
                                     <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('fudan.html', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="我非常喜欢我的女朋友">
                                         <div class="xe-comment-entry">
@@ -146,7 +122,7 @@ gtag('config', 'UA-164484990-1');
             <footer class="main-footer sticky footer-type-1 fixed">
                 <div class="footer-inner">
                     <div class="footer-text">
-                        &copy; 2020 - now&nbsp; &nbsp; &nbsp; &nbsp; 
+                         &copy; 2020 - now&nbsp; &nbsp; &nbsp; &nbsp; 
                         <a href="https://nav.jiehua1995.xyz"><strong>Scholar Navigation</strong></a> designed by <a href="http://blog.jiehua1995.xyz" target="_blank"><strong>Jie and Linqi</strong></a>
                     </div>
                 </div>
@@ -168,5 +144,4 @@ gtag('config', 'UA-164484990-1');
     <script src="./assets/js/xenon-custom.js"></script>
     <textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; font-family: Arimo, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-indent: 0px; line-height: 18.5714px; width: 53px;" class="autosizejs" id="autosizejs"></textarea>
 </body>
-
 </html>
