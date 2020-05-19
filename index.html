@@ -72,12 +72,40 @@ gtag('config', 'UA-164484990-1');
     </nav>
     <div class="page-container">
         <div class="main-content">
-
-            <div class="row">
+        <div class="row">
                 <div class="col-md-12">
                     <div class="panel panel-default" style="margin-top: 200px; margin-left: 50%; transform:translate(-50%,-50%); width: 80%;">
                         <div class="panel-body">
-                            
+
+
+<!--打字机效果-一言网一句引入-->
+         <script src="./assets/js/typed.js"></script>
+         <span id="hitokoto" style="font-size: 25px; font-family:Microsoft YaHei;"></span>
+
+<script>
+  var subtitleEffect = true
+  fetch('https://v1.hitokoto.cn')
+  .then(function (res){
+    return res.json();
+  })
+  .then(function (data) {
+
+      var from = '出自 ' + data.from
+      var sub = ''.length == 0  ? new Array() : ''.split(",");
+      var both = sub.unshift(data.hitokoto,from)  
+      var typed = new Typed("#hitokoto", {
+        strings: sub,
+        startDelay: 300,
+        typeSpeed: 150,
+        loop: true,
+        backSpeed: 50
+      });
+  })
+  .catch(function (err) {
+    console.error(err);
+  })
+</script>
+<!--END:打字机效果-一言网一句引入-->
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('fudan.html', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="我非常喜欢我的女朋友">
