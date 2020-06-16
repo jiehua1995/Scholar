@@ -1,3 +1,15 @@
+function get_Ajax() {
+  $.get('https://v1.hitokoto.cn',{},function(respoonse){
+    $('#hitokoto').html(respoonse.hitokoto);
+  },'JSON');
+}
+function Ajax_Start(){
+  setInterval(get_Ajax,6000);
+}
+get_Ajax();
+Ajax_Start();
+/*
+function get_word(){
 var subtitleEffect = true
 fetch('https://v1.hitokoto.cn')
 .then(function (res){
@@ -19,3 +31,10 @@ fetch('https://v1.hitokoto.cn')
 .catch(function (err) {
   console.error(err);
 })
+$('#hitokoto').html(data.hitokoto);
+}
+function Ajax_Start(){
+  setInterval(get_word,5000);
+}
+Ajax_Start();
+*/
