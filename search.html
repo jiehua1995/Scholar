@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>Navigation</title>
+	<meta charset="UTF-8">
+	<!--描述信息-->
+	<!--使用meta标签自适应-->
+	<meta name="viewport" content="width=devic-width, initial-scale=1.0, maxium-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="description" content="A powerful scholar navigation which can help us to search articles quickly.">
+	<meta name="keywords" content="Scholar, Navigation, 学术, 导航, 搜索">
+	<!--定义页面格式-->
+	<link href="./abc/css/style.css" rel="stylesheet">
+	<!--定义图标-->
+	<link rel="shortcut icon" href="./abc/img/favicon.ico">
+	<!--定义搜索栏字体-->
+	<link href="./abc/font/embed.css" rel="stylesheet">
+	<!--定义搜索栏图标。使用了阿里图标-->
+	<link href="https://at.alicdn.com/t/font_1727338_ccxjtmr3yek.css" rel="stylesheet">
+	<!--Jquery切换搜索引擎-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+	<!--定义搜索框的格式-->
+	<link href="./abc/css/search.css" rel="stylesheet">
+	<!--百度统计-->
+	<script>
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?6cb0169cb7c03776ef5cfba582348565";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+	 </script>
+	 <!--百度联盟-->
+	 <meta name="baidu_union_verify" content="b206d29f94c858c7cf27cf3e8fc57155">
+     <!--谷歌广告-->
+     <script data-ad-client="ca-pub-3613051181626775" async 
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+      </script>
+
+</head>
+
+<body>
+
+	<div id="content">
+		<div class="con">
+			<div class="shlogo">
+				<div class="logo-text embed">Scholar&nbsp;Navigation</div>
+			</div>
+			<section class="sousuo">
+				<div class="search">
+				<div class="search-box">
+					<i class="iconfont icon-google" id="search-icon" style="color:#4c8bf5;" ></i>
+					<input type="text" id="txt" class="search-input" autocomplete="off" autofocus="autofocus">
+					<i class="iconfont icon-shanchu" id="search-clear" style="display: none; color: #515151;"></i>
+				</div>
+				<!--搜索热词-->
+				<!--ul列表是必要的，为了展示热词列表-->
+				<div class="box search-hot-text" id="box"
+				style="display: none;"><ul></ul></div>
+				
+				<!--搜索引擎-->
+				<div class="search-engine" style="display: none;">
+					<div class="search-engine-head">
+						<strong class="search-engine-tit">Selete Your Search Engine</strong>
+					<div class="search-engine-tool">
+						Hot Words: <span id="hot-btn"></span>
+					</div>
+					</div>
+					<div><ul class="search-engine-list"></ul></div>
+				</div>
+				</div>
+			</section>
+			</div>
+
+			<script src="./abc/js/search.js"></script>
+
+			<div class="foot">
+				<a href="https://nav.jiehua1995.xyz/abc/index.html" target="_blank" class="embed">
+					Scholar Navigation
+				</a>
+			</div>
+</body>
+</html>
