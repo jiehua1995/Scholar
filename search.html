@@ -33,6 +33,12 @@
 	 <!--百度联盟-->
 	 <meta name="baidu_union_verify" content="b206d29f94c858c7cf27cf3e8fc57155">
 
+	 <!--music player-->
+	 <!-- require APlayer -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+	<!-- require MetingJS -->
+	<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
 
 </head>
 
@@ -68,6 +74,20 @@
 				</div>
 			</section>
 			</div>
+
+			<meting-js 
+			server="netease" 
+			type="playlist" 
+			id="110886547"
+			fixed="true" 
+			autoplay="false"
+			loop="all"
+			order="random"
+			preload="auto"
+			list-folded="ture"
+			list-max-height="500px"
+			lrc-type="1">
+			</meting-js>
 
 			<script src="./abc-js/search.js"></script>
 
