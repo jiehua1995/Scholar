@@ -1,0 +1,1 @@
+var titleTime,OriginTitle=document.title;document.addEventListener("visibilitychange",function(){document.hidden?($('[rel="icon"]').attr("href","/img/trhx2.png"),document.title="╥﹏╥...标题不见了",clearTimeout(titleTime)):($('[rel="icon"]').attr("href","/img/trhx2.png"),document.title=OriginTitle+"回来了",titleTime=setTimeout(function(){document.title=OriginTitle},2e3))});

@@ -1,0 +1,1 @@
+function get_Ajax(){$.get("https://v1.hitokoto.cn",{},function(t){$("#hitokoto").html(t.hitokoto)},"JSON")}function Ajax_Start(){setInterval(get_Ajax,6e3)}get_Ajax(),Ajax_Start();
